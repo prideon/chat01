@@ -1,46 +1,47 @@
-# laravel-chat
+# Realtime laravel chat using Vue.js and Pusher.
 
-Build a chat app with Laravel and Pusher
+![Screenshot1](https://image.ibb.co/gi8Nvc/img01.png)
+![Screenshot1](https://image.ibb.co/bKR9ac/img2.png)
 
-## Getting Started
 
-Clone the project repository by running the command below if you use SSH
 
-```bash
-git clone git@github.com:ammezie/laravel-chat.git
-```
+## Начало
 
-If you use https, use this instead
+Клонируем или скачиваем репозиторий
+
 
 ```bash
-git clone https://github.com/ammezie/laravel-chat.git
+git clone https://github.com/prideon/chat01.git
 ```
 
-After cloning,run:
+После установки запускаем 
 
 ```bash
 composer install
 ```
 
-Duplicate `.env.example` and rename it `.env`
+Заполняем наш .env файл - вводим хост, название и пароль нашей базы данных.
 
-Then run:
+После этого запускаем команду:
 
 ```bash
 php artisan key:generate
 ```
 
-### Setup Pusher
+### Установка Pusher'a
 
-If you don't have one already, create a free Pusher account at [https://pusher.com/signup](https://pusher.com/signup) then login to your dashboard and create an app.
 
-Set the `BROADCAST_DRIVER` in your `.env` file to **pusher**:
+Данные пушера уже присутствуют в .env файле.
+
+Для того, чтоб привязать свое приложение нужно зарегистрироваться на сайте [https://pusher.com/signup](https://pusher.com/signup) после этого вводим данные нашего приложение в .env файл.
+
+Заполним свойство `BROADCAST_DRIVER` в нашем `.env` файле to **pusher**:
 
 ```txt
 BROADCAST_DRIVER=pusher
 ```
 
-Then fill in your Pusher app credentials in your `.env` file:
+После этого заполним данные о нащем приложении в `.env` файле:
 
 ```txt
 PUSHER_APP_ID=xxxxxx
@@ -49,18 +50,17 @@ PUSHER_APP_SECRET=xxxxxxxxxxxxxxxxxxxx
 PUSHER_APP_CLUSTER=
 ```
 
-### Database Migrations
+### Работа с базой данных
 
-Be sure to fill in your database details in your `.env` file before running the migrations:
+Добавьте данные о вашей базе данных в `.env` файл. После этого запустите команду:
 
 ```bash
 php artisan migrate
 ```
 
-And finally, start the application:
+По желанию:
 
 ```bash
 php artisan serve
 ```
-
-and visit [http://localhost:8000/](http://localhost:8000/) to see the application in action.
+открываем[http://localhost:8000/](http://localhost:8000/) в браузере
