@@ -35,4 +35,25 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+
+
+'facebook' => [
+
+    'client_id' => '893687934137932', //Facebook API
+
+    'client_secret' => '5dc877979f7ded6ef283524753b19c72', //Facebook Secret
+
+    'redirect' => 'http://localhost:8888/auth/facebook/callback',
+],
+
+    'twitter' => [
+
+        'client_id' => 'cLHAtEwqhxNMvjptos0GcB94b',
+
+        'client_secret' => 'QzlYhEsK3aV3yztNYzHxY3RiiI3sc05A282WFcKucK10ZyVN8E',
+
+        'redirect' => 'http://localhost:8888/auth/twitter/callback',
+
+    ],
+
 ];

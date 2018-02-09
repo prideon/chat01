@@ -115,7 +115,10 @@
             cursor: pointer;
         }
 
-
+.socallog
+{
+    font-size: 25px;
+}
     </style>
 
     <!-- Scripts -->

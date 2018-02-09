@@ -9,7 +9,9 @@
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
-
+                        <label for="name" class="col-md-4 control-label">Login With</label>
+                        <a href="{{ url('login/facebook') }}" class="socallog btn btn-social-icon" > <i class="fab fa-facebook-square"></i> </a>
+                        <a href="{{ url('login/twitter') }}" class="socallog btn btn-social-icon" > <i class="fab fa-twitter-square"></i> </a>
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
