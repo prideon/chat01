@@ -1,6 +1,6 @@
 # Realtime laravel chat using Vue.js and Pusher.
 
-![Screenshot1](https://image.ibb.co/gi8Nvc/img01.png)
+![Screenshot1](http://image.ibb.co/jaxwBH/Screenshot_at_Feb_09_14_41_26.png)
 ![Screenshot1](https://image.ibb.co/bKR9ac/img2.png)
 
 
