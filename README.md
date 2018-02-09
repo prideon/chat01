@@ -50,6 +50,33 @@ PUSHER_APP_SECRET=xxxxxxxxxxxxxxxxxxxx
 PUSHER_APP_CLUSTER=
 ```
 
+### Вход с помощью соц сетей
+
+Для входа с помощью соц. сетей создайте приложения в Facebook и Twitter API
+
+`'facebook' => [
+ 
+   'client_id' => 'XXXXXXXXX', //Facebook API
+ 
+   'client_secret' => 'XXXXXXXX', //Facebook Secret
+ 
+   'redirect' => 'XXXXXXXXXX',
+ 
+],
+
+twitter' => [
+ 
+   'client_id' => 'XXXXXXXXX', //Twitter API
+ 
+   'client_secret' => 'XXXXXXXX', //Twitter Secret
+ 
+   'redirect' => 'XXXXXXXXXX',
+ 
+],
+
+
+`
+
 ### Работа с базой данных
 
 Добавьте данные о вашей базе данных в `.env` файл. После этого запустите команду:
