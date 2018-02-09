@@ -54,7 +54,7 @@ PUSHER_APP_CLUSTER=
 
 Для входа с помощью соц. сетей создайте приложения в Facebook и Twitter API
 
-`'facebook' => [
+```'facebook' => [
  
    'client_id' => 'XXXXXXXXX', //Facebook API
  
@@ -74,8 +74,7 @@ twitter' => [
  
 ],
 
-
-`
+```
 
 ### Работа с базой данных
 
